@@ -10,7 +10,7 @@ import spark.Spark.*
  */
 class ServiceRunner {
     fun run() {
-        get("/hello", { req, res -> "Hello Spark!!!" })
+        initControllers()
     }
 
     private fun initControllers() {
